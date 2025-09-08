@@ -16,6 +16,10 @@
             android:exported="false"/>
 
         <activity
+            android:name=".activities.AddUsersActivity"
+            android:exported="false"/>
+
+        <activity
             android:name=".activities.NotificationsActivity"
             android:exported="false"/>
 
