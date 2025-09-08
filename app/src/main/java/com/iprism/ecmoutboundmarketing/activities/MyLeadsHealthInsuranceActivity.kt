@@ -1,0 +1,59 @@
+package com.iprism.ecmoutboundmarketing.activities
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
+import androidx.core.content.ContextCompat
+import com.iprism.ecmoutboundmarketing.R
+import com.iprism.ecmoutboundmarketing.adapters.MyLeadsCashPagerAdapter
+import com.iprism.ecmoutboundmarketing.databinding.ActivityMyLeadsHealthInsuranceBinding
+
+
+class MyLeadsHealthInsuranceActivity : AppCompatActivity() {
+
+
+    private lateinit var binding : ActivityMyLeadsHealthInsuranceBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        binding = ActivityMyLeadsHealthInsuranceBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val adapter = MyLeadsCashPagerAdapter(this)
+        binding.viewPager.isUserInputEnabled = false
+        binding.viewPager.adapter = adapter
+        binding.viewPager.setCurrentItem(0, false)
+        handleBack()
+        handleCashLo()
+        handleEmiLo()
+    }
+
+    private fun handleCashLo() {
+        binding.personalInsuranceLo.setOnClickListener(View.OnClickListener {
+            setupButtonsStyling(binding.personalInsuranceLo, binding.companyInsuranceLo)
+            binding.viewPager.setCurrentItem(0, false)
+        })
+    }
+
+    private fun handleEmiLo() {
+        binding.companyInsuranceLo.setOnClickListener(View.OnClickListener {
+            setupButtonsStyling(binding.companyInsuranceLo, binding.personalInsuranceLo)
+            binding.viewPager.setCurrentItem(1, false)
+        })
+    }
+
+    private fun setupButtonsStyling(textView: TextView, textView1: TextView){
+        textView.setTextColor(ContextCompat.getColor(this, R.color.white))
+        textView.setBackgroundColor(ContextCompat.getColor(this, R.color.green))
+        textView1.setTextColor(ContextCompat.getColor(this, R.color.black))
+        textView1.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+    }
+
+    private fun handleBack() {
+        binding.backImg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
+    }
+}

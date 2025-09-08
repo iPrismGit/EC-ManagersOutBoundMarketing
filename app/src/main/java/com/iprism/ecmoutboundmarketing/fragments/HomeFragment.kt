@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.iprism.ecmoutboundmarketing.activities.AddUsersActivity
+import com.iprism.ecmoutboundmarketing.activities.MyLeadsActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentHomeBinding
 import com.iprism.ecmoutboundmarketing.utils.ToastUtils
 
@@ -25,7 +26,7 @@ class HomeFragment : Fragment() {
 //        handleReferADiagnosticLo()
 //        handlePreInsurenceLo()
         handleAddUSersLo()
-//        handleMyLeadsLo()
+        handleMyLeadsLo()
 //        handleHospitalDoctorsLo()
 //        handleHospitalHodsLo()
 //        handleMyTaskLo()
@@ -217,12 +218,12 @@ class HomeFragment : Fragment() {
 //            startActivity(Intent(requireContext(), HospitalDoctorsActivity::class.java))
 //        }
 //    }
-//
-//    private fun handleMyLeadsLo() {
-//        binding.myLeadsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), MyLeadsActivity::class.java))
-//        }
-//    }
+
+    private fun handleMyLeadsLo() {
+        binding.myLeadsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), MyLeadsActivity::class.java))
+        }
+    }
 
     private fun handleAddUSersLo() {
         binding.addUsersLo.setOnClickListener(View.OnClickListener {

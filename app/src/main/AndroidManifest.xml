@@ -16,6 +16,22 @@
             android:exported="false"/>
 
         <activity
+            android:name=".activities.MyLeadsActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.MyLeadsCashActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.MyLeadsOthersActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activities.MyLeadsHealthInsuranceActivity"
+            android:exported="false"/>
+
+        <activity
             android:name=".activities.AddUsersActivity"
             android:exported="false"/>
 

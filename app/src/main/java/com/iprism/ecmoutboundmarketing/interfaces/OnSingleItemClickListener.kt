@@ -1,4 +1,4 @@
-package com.iprism.ecmcorporatemarketing.interfaces
+package com.iprism.ecmoutboundmarketing.interfaces
 
 interface OnSingleItemClickListener {
 

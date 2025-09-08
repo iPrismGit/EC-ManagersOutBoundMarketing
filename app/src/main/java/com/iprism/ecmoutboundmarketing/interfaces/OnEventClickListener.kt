@@ -1,4 +1,4 @@
-package com.iprism.ecmanagerstrademarketing.interfaces
+package com.iprism.ecmoutboundmarketing.interfaces
 
 interface OnEventClickListener {
 
