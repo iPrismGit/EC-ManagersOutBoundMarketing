@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.core.content.ContextCompat
+import com.iprism.ecmoutboundmarketing.R
 import com.iprism.ecmoutboundmarketing.adapters.MyLeadsCashPagerAdapter
 import com.iprism.ecmoutboundmarketing.databinding.ActivityMyLeadsCashBinding
 
