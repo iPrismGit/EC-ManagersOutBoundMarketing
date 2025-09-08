@@ -16,6 +16,10 @@
             android:exported="false"/>
 
         <activity
+            android:name=".activities.NotificationsActivity"
+            android:exported="false"/>
+
+        <activity
             android:name=".activities.LoginActivity"
             android:exported="false"/>
 

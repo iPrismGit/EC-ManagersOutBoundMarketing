@@ -48,15 +48,10 @@ class HomeFragment : Fragment() {
         handleHealthTalks()
 //        handleHealthMedia()
 //        handleDegitalPromos()
-        handleCompaniesLo()
         return binding.root
     }
 
-    private fun handleCompaniesLo() {
-        binding.companiesLo.setOnClickListener { view ->
-            ToastUtils.showErrorCustomToast(requireContext(), "There are no Screens in Figma")
-        }
-    }
+
 
 //    private fun handleDegitalPromos() {
 //        binding.digitalPromosLo.setOnClickListener { view ->

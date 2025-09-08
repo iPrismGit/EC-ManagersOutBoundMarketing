@@ -218,87 +218,6 @@
                                         android:textSize="12dp" />
 
                                 </LinearLayout>
-                                <LinearLayout
-                                    android:id="@+id/promo_coupons_top_lo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginStart="6dp"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="86dp"
-                                        android:layout_height="86dp"
-                                        android:adjustViewBounds="true"
-                                        android:scaleType="centerCrop"
-                                        android:src="@drawable/promo_coupon_round_img" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="6dp"
-                                        android:fontFamily="@font/lato"
-                                        android:gravity="center"
-                                        android:text="Promo Coupon"
-                                        android:textColor="@color/black"
-                                        android:textSize="12dp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:id="@+id/gallery_top_lo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginStart="6dp"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="86dp"
-                                        android:layout_height="86dp"
-                                        android:adjustViewBounds="true"
-                                        android:scaleType="centerCrop"
-                                        android:src="@drawable/gallery_round_img" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="6dp"
-                                        android:fontFamily="@font/lato"
-                                        android:gravity="center"
-                                        android:text="@string/gallery"
-                                        android:textColor="@color/black"
-                                        android:textSize="12dp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:id="@+id/rewards_top_lo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginStart="6dp"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="86dp"
-                                        android:layout_height="86dp"
-                                        android:adjustViewBounds="true"
-                                        android:scaleType="centerCrop"
-                                        android:src="@drawable/rewards_round_img" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="6dp"
-                                        android:fontFamily="@font/lato"
-                                        android:gravity="center"
-                                        android:text="@string/rewards"
-                                        android:textColor="@color/black"
-                                        android:textSize="12dp" />
-
-                                </LinearLayout>
-
 
                             </LinearLayout>
                         </HorizontalScrollView>
@@ -398,7 +317,7 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:id="@+id/companies_lo"
+                            android:id="@+id/health_advisors_lo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginStart="4dp"
@@ -418,7 +337,7 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/companies_img" />
+                                    android:src="@drawable/health_adviser_img" />
 
                             </com.google.android.material.card.MaterialCardView>
 
@@ -428,14 +347,14 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="@string/companies"
+                                android:text="@string/health_advisors"
                                 android:textColor="@color/black"
                                 android:textSize="12dp" />
 
                         </LinearLayout>
 
                         <LinearLayout
-                            android:id="@+id/out_bound_marketing_team_lo"
+                            android:id="@+id/company_employees_lo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginStart="4dp"
@@ -454,7 +373,7 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/out_bound_img" />
+                                    android:src="@drawable/company_employes_img" />
 
                             </com.google.android.material.card.MaterialCardView>
 
@@ -464,7 +383,7 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="@string/out_bound_mkt_team"
+                                android:text="@string/company_employees"
                                 android:textColor="@color/black"
                                 android:textSize="12dp" />
 
@@ -478,7 +397,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:id="@+id/my_health_advisors_lo"
+                            android:id="@+id/bank_employees_lo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="4dp"
@@ -497,7 +416,7 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/my_health_adviser_img" />
+                                    android:src="@drawable/bank_employees_img" />
 
                             </com.google.android.material.card.MaterialCardView>
 
@@ -507,44 +426,7 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="@string/my_health_advisors"
-                                android:textColor="@color/black"
-                                android:textSize="12dp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/rewards_lo"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="4dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <com.google.android.material.card.MaterialCardView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                app:cardCornerRadius="8dp"
-                                app:strokeColor="@color/gray"
-                                app:strokeWidth="0.5dp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:adjustViewBounds="true"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/reward_img" />
-
-                            </com.google.android.material.card.MaterialCardView>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="6dp"
-                                android:fontFamily="@font/lato"
-                                android:gravity="center"
-                                android:text="@string/rewards"
+                                android:text="Bank Employees"
                                 android:textColor="@color/black"
                                 android:textSize="12dp" />
 
@@ -562,7 +444,6 @@
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="match_parent"
                                 android:layout_height="80dp"
-                                android:visibility="visible"
                                 app:cardCornerRadius="8dp"
                                 app:strokeColor="@color/gray"
                                 app:strokeWidth="0.5dp">
@@ -572,7 +453,6 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:scaleType="centerCrop"
-
                                     android:src="@drawable/task_performance_img" />
 
                             </com.google.android.material.card.MaterialCardView>
@@ -585,8 +465,7 @@
                                 android:gravity="center"
                                 android:text="@string/task_vs_performance"
                                 android:textColor="@color/black"
-                                android:textSize="12dp"
-                                android:visibility="visible" />
+                                android:textSize="12dp" />
 
                         </LinearLayout>
 
@@ -595,6 +474,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
@@ -621,31 +501,25 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="@string/daily_report"
+                                android:text="@string/daily_reports"
                                 android:textColor="@color/black"
                                 android:textSize="12dp"
                                 android:visibility="visible" />
 
                         </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="16dp"
-                        android:orientation="horizontal">
 
                         <LinearLayout
-                            android:id="@+id/digital_promos_lo"
+                            android:id="@+id/digital_branding_lo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="4dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="match_parent"
                                 android:layout_height="80dp"
+                                android:visibility="visible"
                                 app:cardCornerRadius="8dp"
                                 app:strokeColor="@color/gray"
                                 app:strokeWidth="0.5dp">
@@ -667,15 +541,22 @@
                                 android:gravity="center"
                                 android:text="@string/digital_branding"
                                 android:textColor="@color/black"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"
+                                android:visibility="visible" />
 
                         </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:id="@+id/team_connect_lo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="4dp"
                             android:layout_marginEnd="4dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -720,7 +601,6 @@
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="match_parent"
                                 android:layout_height="80dp"
-                                android:visibility="visible"
                                 app:cardCornerRadius="8dp"
                                 app:strokeColor="@color/gray"
                                 app:strokeWidth="0.5dp">
@@ -740,10 +620,9 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="To-Do-List"
+                                android:text="@string/to_do_list"
                                 android:textColor="@color/black"
-                                android:textSize="12dp"
-                                android:visibility="visible" />
+                                android:textSize="12dp" />
 
                         </LinearLayout>
 
@@ -752,6 +631,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
@@ -778,31 +658,25 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="Events"
+                                android:text="@string/events"
                                 android:textColor="@color/black"
                                 android:textSize="12dp"
                                 android:visibility="visible" />
 
                         </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="16dp"
-                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:id="@+id/promo_coupons_lo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="4dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="match_parent"
                                 android:layout_height="80dp"
+                                android:visibility="visible"
                                 app:cardCornerRadius="8dp"
                                 app:strokeColor="@color/gray"
                                 app:strokeWidth="0.5dp">
@@ -822,17 +696,24 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="Promo \nCoupons"
+                                android:text="@string/promo_coupons"
                                 android:textColor="@color/black"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"
+                                android:visibility="visible" />
 
                         </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:id="@+id/gallery_lo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="4dp"
                             android:layout_marginEnd="4dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -859,7 +740,44 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="Gallery"
+                                android:text="@string/gallery"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rewards_lo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                app:cardCornerRadius="8dp"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="0.5dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/reward_img" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center"
+                                android:text="@string/rewards"
                                 android:textColor="@color/black"
                                 android:textSize="12dp" />
 

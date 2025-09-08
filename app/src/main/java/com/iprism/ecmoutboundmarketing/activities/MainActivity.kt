@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleNotificationsIv() {
         binding.notificationIv.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(this, NotificationsActivity::class.java))
+            startActivity(Intent(this, NotificationsActivity::class.java))
         })
     }
 
