@@ -24,14 +24,37 @@ class AddUsersActivity : AppCompatActivity() {
             insets
         }
         handleBack()
-
+        handleMyLeadsLo()
+        handleBankEmployeeLo()
+        handleCompanyEmployeeLo()
     }
 
+    private fun handleCompanyEmployeeLo() {
+        binding.companyEmployeesLo.setOnClickListener { view ->
+            var intent = Intent(this, CreateEmployeesActivity::class.java)
+            intent.putExtra("tag", "Company Employee ")
+            startActivity(intent)
+        }
+    }
 
+    private fun handleBankEmployeeLo() {
+        binding.bankEmployeesLo.setOnClickListener { view ->
+            var intent = Intent(this, CreateEmployeesActivity::class.java)
+            intent.putExtra("tag", "Bank Employee ")
+            startActivity(intent)
+        }
+    }
+
+    private fun handleMyLeadsLo() {
+        binding.myLeadsLo.setOnClickListener { view ->
+            startActivity(Intent(this, CreateMyLeadsActivity::class.java))
+        }
+    }
 
     private fun handleBack() {
         binding.backImg.setOnClickListener(View.OnClickListener {
             finish()
         })
     }
+
 }

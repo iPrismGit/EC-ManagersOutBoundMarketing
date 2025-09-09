@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.iprism.ecmoutboundmarketing.activities.CreateEmployeesActivity
+import com.iprism.ecmoutboundmarketing.activities.CreateMyLeadsActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentAddUsersBinding
 
 class AddUsersFragment : Fragment() {
@@ -17,11 +19,11 @@ class AddUsersFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentAddUsersBinding.inflate(inflater, container, false)
-//        handleMyLeadsLo()
+        handleMyLeadsLo()
 //        handleCompaniesLo()
 //        handleMyHealthAdvisorLo()
-//        handleOutBoundMarketingTeamLo()
-//        handlePanelAdvisorsLo()
+        handleCompanyEmployeeLo()
+        handleBankEmployeeLo()
         return binding.root
     }
 
@@ -36,24 +38,28 @@ class AddUsersFragment : Fragment() {
 //            startActivity(Intent(requireContext(), AddHealthAdvisorActivity::class.java))
 //        }
 //    }
-//
-//    private fun handleOutBoundMarketingTeamLo() {
-//        binding.clientRelationsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), AddOutBoundMarketingTeamActivity::class.java))
-//        }
-//    }
-//
-//    private fun handleCompaniesLo() {
-//        binding.companiesLo.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(requireContext(), CreateCompaniesActivity::class.java))
-//        })
-//    }
-//
-//    private fun handleMyLeadsLo() {
-//        binding.myLeadsLo.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(requireContext(), CreateMyLeadsActivity::class.java))
-//        })
-//    }
+
+private fun handleCompanyEmployeeLo() {
+    binding.companyEmployeesLo.setOnClickListener { view ->
+        var intent = Intent(requireContext(), CreateEmployeesActivity::class.java)
+        intent.putExtra("tag", "Company Employee ")
+        startActivity(intent)
+    }
+}
+
+    private fun handleBankEmployeeLo() {
+        binding.bankEmployeesLo.setOnClickListener { view ->
+            var intent = Intent(requireContext(), CreateEmployeesActivity::class.java)
+            intent.putExtra("tag", "Bank Employee ")
+            startActivity(intent)
+        }
+    }
+
+    private fun handleMyLeadsLo() {
+        binding.myLeadsLo.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(requireContext(), CreateMyLeadsActivity::class.java))
+        })
+    }
 
 
 }

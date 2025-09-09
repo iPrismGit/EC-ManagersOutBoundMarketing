@@ -101,4 +101,7 @@
     <string name="promo_coupons">Promo Coupons</string>
     <string name="company_employees">Company Employees</string>
     <string name="bank_employees">Bank Employees</string>
+    <string name="request_reference">Request Reference</string>
+    <string name="single_cover">Single Cover</string>
+    <string name="family_cover">Family Cover</string>
 </resources>
