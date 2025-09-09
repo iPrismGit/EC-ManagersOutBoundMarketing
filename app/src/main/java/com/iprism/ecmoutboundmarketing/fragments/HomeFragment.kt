@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.iprism.ecmoutboundmarketing.activities.AddDailyReportActivity
 import com.iprism.ecmoutboundmarketing.activities.AddUsersActivity
 import com.iprism.ecmoutboundmarketing.activities.MyLeadsActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentHomeBinding
@@ -34,7 +35,7 @@ class HomeFragment : Fragment() {
 //        handleMyHealthAdvisorsLo()
 //        handleEventsLo()
 //        handleAddTodoListLo()
-//        handleDailyReportsLo()
+        handleDailyReportsLo()
 //        handlePromoCouponsLo()
 //        handleRewardsLo()
 //        handleHospitalFecilitiesLo()
@@ -171,12 +172,12 @@ class HomeFragment : Fragment() {
 //        }
 //    }
 //
-//    private fun handleDailyReportsLo() {
-//        binding.dailyReportsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), AddDailyReportActivity::class.java))
-//        }
-//    }
-//
+    private fun handleDailyReportsLo() {
+        binding.dailyReportsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), AddDailyReportActivity::class.java))
+        }
+    }
+
 //    private fun handleAddTodoListLo() {
 //        binding.toDoListLo.setOnClickListener { view ->
 //            startActivity(Intent(requireContext(), ToDoListsActivity::class.java))
