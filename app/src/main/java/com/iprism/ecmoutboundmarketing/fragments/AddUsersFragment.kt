@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.iprism.ecmoutboundmarketing.activities.CreateEmployeesActivity
+import com.iprism.ecmoutboundmarketing.activities.CreateHealthAdvisorActivity
 import com.iprism.ecmoutboundmarketing.activities.CreateMyLeadsActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentAddUsersBinding
 
@@ -20,26 +21,20 @@ class AddUsersFragment : Fragment() {
     ): View {
         binding = FragmentAddUsersBinding.inflate(inflater, container, false)
         handleMyLeadsLo()
-//        handleCompaniesLo()
-//        handleMyHealthAdvisorLo()
+        handleHealthAdvisorLo()
         handleCompanyEmployeeLo()
         handleBankEmployeeLo()
         return binding.root
     }
 
-//    private fun handlePanelAdvisorsLo() {
-//        binding.panelAdvisorsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), AddPanelAdvisorActivity::class.java))
-//        }
-//    }
-//
-//    private fun handleMyHealthAdvisorLo() {
-//        binding.healthAdvisersLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), AddHealthAdvisorActivity::class.java))
-//        }
-//    }
+    private fun handleHealthAdvisorLo() {
+        binding.healthAdvisorsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), CreateHealthAdvisorActivity::class.java))
+        }
+    }
 
-private fun handleCompanyEmployeeLo() {
+
+    private fun handleCompanyEmployeeLo() {
     binding.companyEmployeesLo.setOnClickListener { view ->
         var intent = Intent(requireContext(), CreateEmployeesActivity::class.java)
         intent.putExtra("tag", "Company Employee ")

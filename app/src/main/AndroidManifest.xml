@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECMOutBoundMarketing">
         <activity
+            android:name=".activities.CreateHealthAdvisorActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.CreateEmployeesActivity"
             android:exported="false" />
         <activity

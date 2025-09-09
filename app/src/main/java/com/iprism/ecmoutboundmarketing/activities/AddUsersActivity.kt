@@ -27,6 +27,13 @@ class AddUsersActivity : AppCompatActivity() {
         handleMyLeadsLo()
         handleBankEmployeeLo()
         handleCompanyEmployeeLo()
+        handleHealthAdvisorLo()
+    }
+
+    private fun handleHealthAdvisorLo() {
+        binding.healthAdvisorsLo.setOnClickListener { view ->
+            startActivity(Intent(this, CreateHealthAdvisorActivity::class.java))
+        }
     }
 
     private fun handleCompanyEmployeeLo() {
