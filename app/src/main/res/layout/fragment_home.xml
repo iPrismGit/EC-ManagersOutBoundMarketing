@@ -583,7 +583,7 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="Team Connect"
+                                android:text="@string/team_connect"
                                 android:textColor="@color/black"
                                 android:textSize="12dp" />
 

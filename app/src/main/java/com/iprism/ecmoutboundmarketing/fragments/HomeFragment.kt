@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import com.iprism.ecmoutboundmarketing.activities.AddDailyReportActivity
 import com.iprism.ecmoutboundmarketing.activities.AddUsersActivity
 import com.iprism.ecmoutboundmarketing.activities.MyLeadsActivity
+import com.iprism.ecmoutboundmarketing.activities.TeamConnectActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentHomeBinding
 import com.iprism.ecmoutboundmarketing.utils.ToastUtils
 
@@ -31,7 +32,7 @@ class HomeFragment : Fragment() {
 //        handleHospitalDoctorsLo()
 //        handleHospitalHodsLo()
 //        handleMyTaskLo()
-//        handleTeamConnectLo()
+        handleTeamConnectLo()
 //        handleMyHealthAdvisorsLo()
 //        handleEventsLo()
 //        handleAddTodoListLo()
@@ -195,13 +196,13 @@ class HomeFragment : Fragment() {
 //            startActivity(Intent(requireContext(), MyHealthAdvisorsActivity::class.java))
 //        }
 //    }
-//
-//    private fun handleTeamConnectLo() {
-//        binding.teamConnectLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), TeamConnectActivity::class.java))
-//        }
-//    }
-//
+
+    private fun handleTeamConnectLo() {
+        binding.teamConnectLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), TeamConnectActivity::class.java))
+        }
+    }
+
 //    private fun handleMyTaskLo() {
 //        binding.taskVsPerformanceLo.setOnClickListener { view ->
 //            startActivity(Intent(requireContext(), MyTasksActivity::class.java))

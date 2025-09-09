@@ -16,6 +16,10 @@
             android:exported="false" />
 
         <activity
+            android:name=".activities.TeamConnectActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.AddDailyReportActivity"
             android:exported="false" />
 
