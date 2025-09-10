@@ -13,6 +13,14 @@
         android:theme="@style/Theme.ECMOutBoundMarketing">
 
         <activity
+            android:name=".activities.ToDoListsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.AddTodoListActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.AddEventActivity"
             android:exported="false" />
 

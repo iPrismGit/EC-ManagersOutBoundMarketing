@@ -23,6 +23,7 @@ import com.iprism.ecmoutboundmarketing.activities.RequestAmbulanceActivity
 import com.iprism.ecmoutboundmarketing.activities.SendInsurencePreAuthActivity
 import com.iprism.ecmoutboundmarketing.activities.SurgeriesActivity
 import com.iprism.ecmoutboundmarketing.activities.TeamConnectActivity
+import com.iprism.ecmoutboundmarketing.activities.ToDoListsActivity
 import com.iprism.ecmoutboundmarketing.activities.WhiteBoardFeedBackActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentHomeBinding
 import com.iprism.ecmoutboundmarketing.utils.ToastUtils
@@ -49,7 +50,7 @@ class HomeFragment : Fragment() {
         handleTeamConnectLo()
         handleMyHealthAdvisorsLo()
         handleEventsLo()
-//        handleAddTodoListLo()
+        handleAddTodoListLo()
         handleDailyReportsLo()
 //        handlePromoCouponsLo()
 //        handleRewardsLo()
@@ -171,11 +172,11 @@ class HomeFragment : Fragment() {
         }
     }
 
-//    private fun handleAddTodoListLo() {
-//        binding.toDoListLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), ToDoListsActivity::class.java))
-//        }
-//    }
+    private fun handleAddTodoListLo() {
+        binding.toDoListLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), ToDoListsActivity::class.java))
+        }
+    }
 
     private fun handleEventsLo() {
         binding.eventsLo.setOnClickListener { view ->
