@@ -8,6 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.iprism.ecmoutboundmarketing.activities.AddDailyReportActivity
 import com.iprism.ecmoutboundmarketing.activities.AddUsersActivity
+import com.iprism.ecmoutboundmarketing.activities.HealthMediaActivity
+import com.iprism.ecmoutboundmarketing.activities.HospitalDoctorsActivity
+import com.iprism.ecmoutboundmarketing.activities.HospitalFecilitiesActivity
+import com.iprism.ecmoutboundmarketing.activities.HospitalHodsActivity
+import com.iprism.ecmoutboundmarketing.activities.HospitalTariffsListActivity
+import com.iprism.ecmoutboundmarketing.activities.HospitalTieupsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyHealthAdvisorsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyLeadsActivity
 import com.iprism.ecmoutboundmarketing.activities.TeamConnectActivity
@@ -30,8 +36,8 @@ class HomeFragment : Fragment() {
 //        handlePreInsurenceLo()
         handleAddUSersLo()
         handleMyLeadsLo()
-//        handleHospitalDoctorsLo()
-//        handleHospitalHodsLo()
+        handleHospitalDoctorsLo()
+        handleHospitalHodsLo()
 //        handleMyTaskLo()
         handleTeamConnectLo()
         handleMyHealthAdvisorsLo()
@@ -40,18 +46,18 @@ class HomeFragment : Fragment() {
         handleDailyReportsLo()
 //        handlePromoCouponsLo()
 //        handleRewardsLo()
-//        handleHospitalFecilitiesLo()
-//        handleHospitalTieupsLo()
+        handleHospitalFecilitiesLo()
+        handleHospitalTieupsLo()
 //        handleSurgeriesLo()
 //        handleWhiteBoardLo()
-//        handleHospitalTarrifsLo()
+        handleHospitalTarrifsLo()
 //        handlePromoCouponsTopLo()
 //        handleRewardsTopLo()
 //        handleOutBounndMTLo()
         handleHospitalUpdatesLo()
         handlePatientTestimonialsLo()
         handleHealthTalks()
-//        handleHealthMedia()
+        handleHealthMedia()
 //        handleDegitalPromos()
         return binding.root
     }
@@ -63,12 +69,12 @@ class HomeFragment : Fragment() {
 //            startActivity(Intent(requireContext(), DigitalBrandingsActivity::class.java))
 //        }
 //    }
-//
-//    private fun handleHealthMedia() {
-//        binding.healthMediaLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), HealthMediaActivity::class.java))
-//        }
-//    }
+
+    private fun handleHealthMedia() {
+        binding.healthMediaLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), HealthMediaActivity::class.java))
+        }
+    }
 
     private fun handleHealthTalks() {
         binding.healthTalksLo.setOnClickListener { view ->
@@ -89,12 +95,7 @@ class HomeFragment : Fragment() {
         })
     }
 
-//    private fun handleOutBounndMTLo() {
-//        binding.outBoundMarketingTeamLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), InBoundMarketingTeamsActivity::class.java))
-//        }
-//    }
-//
+
 //    private fun handleRewardsTopLo() {
 //        binding.rewardsTopLo.setOnClickListener { view ->
 //            startActivity(Intent(requireContext(), RewardsActivity::class.java))
@@ -131,12 +132,12 @@ class HomeFragment : Fragment() {
 //        })
 //    }
 //
-//    private fun handleHospitalTarrifsLo() {
-//        binding.hospitalTariffsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), HospitalTariffsListActivity::class.java))
-//        }
-//    }
-//
+    private fun handleHospitalTarrifsLo() {
+        binding.hospitalTariffsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), HospitalTariffsListActivity::class.java))
+        }
+    }
+
 //    private fun handleWhiteBoardLo() {
 //        binding.whiteBoardLo.setOnClickListener { view ->
 //            startActivity(Intent(requireContext(), WhiteBoardFeedBackActivity::class.java))
@@ -149,19 +150,18 @@ class HomeFragment : Fragment() {
 //        }
 //    }
 //
-//    private fun handleHospitalTieupsLo() {
-//        binding.hospitalTieupsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), HospitalTieupsActivity::class.java))
-//        }
-//    }
-//
-//    private fun handleHospitalFecilitiesLo() {
-//        binding.hospitalFacilitiesLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), HospitalFecilitiesActivity::class.java))
-//        }
-//
-//    }
-//
+    private fun handleHospitalTieupsLo() {
+        binding.hospitalTieupsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), HospitalTieupsActivity::class.java))
+        }
+    }
+
+    private fun handleHospitalFecilitiesLo() {
+        binding.hospitalFacilitiesLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), HospitalFecilitiesActivity::class.java))
+        }
+    }
+
 //    private fun handleRewardsLo() {
 //        binding.rewardsLo.setOnClickListener { view ->
 //            startActivity(Intent(requireContext(), RewardsActivity::class.java))
@@ -209,18 +209,18 @@ class HomeFragment : Fragment() {
 //            startActivity(Intent(requireContext(), MyTasksActivity::class.java))
 //        }
 //    }
-//
-//    private fun handleHospitalHodsLo() {
-//        binding.hospitalHodsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), HospitalHodsActivity::class.java))
-//        }
-//    }
-//
-//    private fun handleHospitalDoctorsLo() {
-//        binding.hospitalDoctorsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), HospitalDoctorsActivity::class.java))
-//        }
-//    }
+
+    private fun handleHospitalHodsLo() {
+        binding.hospitalHodsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), HospitalHodsActivity::class.java))
+        }
+    }
+
+    private fun handleHospitalDoctorsLo() {
+        binding.hospitalDoctorsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), HospitalDoctorsActivity::class.java))
+        }
+    }
 
     private fun handleMyLeadsLo() {
         binding.myLeadsLo.setOnClickListener { view ->
