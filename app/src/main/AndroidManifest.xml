@@ -13,6 +13,22 @@
         android:theme="@style/Theme.ECMOutBoundMarketing">
 
         <activity
+            android:name=".activities.AddEventActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.EventsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.EventCategoriesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.EventDetailsActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.FeedBackActivity"
             android:exported="false" />
 

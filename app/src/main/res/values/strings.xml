@@ -89,6 +89,7 @@
     <string name="organiser">Organiser</string>
     <string name="contact_person">Contact Person</string>
     <string name="event_incharge">Event Inancel">Cancel</string>
+    <string name="cancel">Cancel</string>
     <string name="cancelled">Cancelled</string>
     <string name="notes">Notes</string>
     <string name="daily_reports">Daily Reports</string>
