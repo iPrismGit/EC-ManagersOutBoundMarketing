@@ -13,6 +13,22 @@
         android:theme="@style/Theme.ECMOutBoundMarketing">
 
         <activity
+            android:name=".activities.ReferADiagnosticActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.RefferAnAdmissionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.RequestAmbulanceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.SendInsurencePreAuthActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.HealthMediaActivity"
             android:exported="false" />
 

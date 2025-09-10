@@ -16,6 +16,10 @@ import com.iprism.ecmoutboundmarketing.activities.HospitalTariffsListActivity
 import com.iprism.ecmoutboundmarketing.activities.HospitalTieupsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyHealthAdvisorsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyLeadsActivity
+import com.iprism.ecmoutboundmarketing.activities.ReferADiagnosticActivity
+import com.iprism.ecmoutboundmarketing.activities.RefferAnAdmissionActivity
+import com.iprism.ecmoutboundmarketing.activities.RequestAmbulanceActivity
+import com.iprism.ecmoutboundmarketing.activities.SendInsurencePreAuthActivity
 import com.iprism.ecmoutboundmarketing.activities.TeamConnectActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentHomeBinding
 import com.iprism.ecmoutboundmarketing.utils.ToastUtils
@@ -30,10 +34,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-//        handleRequestAmbulanceLo()
-//        handleReferAnAdmissionLo()
-//        handleReferADiagnosticLo()
-//        handlePreInsurenceLo()
+        handleRequestAmbulanceLo()
+        handleReferAnAdmissionLo()
+        handleReferADiagnosticLo()
+        handlePreInsurenceLo()
         handleAddUSersLo()
         handleMyLeadsLo()
         handleHospitalDoctorsLo()
@@ -95,43 +99,30 @@ class HomeFragment : Fragment() {
         })
     }
 
+    private fun handlePreInsurenceLo() {
+        binding.sendInsurencePreAuthLo.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(requireContext(), SendInsurencePreAuthActivity::class.java))
+        })
+    }
 
-//    private fun handleRewardsTopLo() {
-//        binding.rewardsTopLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), RewardsActivity::class.java))
-//        }
-//    }
-//
-//    private fun handlePromoCouponsTopLo() {
-//        binding.promoCouponsTopLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), PromoCouponsActivity::class.java))
-//        }
-//    }
-//
-//    private fun handlePreInsurenceLo() {
-//        binding.sendInsurencePreAuthLo.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(requireContext(), SendInsurencePreAuthActivity::class.java))
-//        })
-//    }
-//
-//    private fun handleReferAnAdmissionLo() {
-//        binding.referAnAdmissionLo.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(requireContext(), RefferAnAdmissionActivity::class.java))
-//        })
-//    }
-//
-//    private fun handleReferADiagnosticLo() {
-//        binding.refferADiagnosticLo.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(requireContext(), ReferADiagnosticActivity::class.java))
-//        })
-//    }
-//
-//    private fun handleRequestAmbulanceLo() {
-//        binding.requestAmbulanceLo.setOnClickListener(View.OnClickListener {
-//            startActivity(Intent(requireContext(), RequestAmbulanceActivity::class.java))
-//        })
-//    }
-//
+    private fun handleReferAnAdmissionLo() {
+        binding.referAnAdmissionLo.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(requireContext(), RefferAnAdmissionActivity::class.java))
+        })
+    }
+
+    private fun handleReferADiagnosticLo() {
+        binding.refferADiagnosticLo.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(requireContext(), ReferADiagnosticActivity::class.java))
+        })
+    }
+
+    private fun handleRequestAmbulanceLo() {
+        binding.requestAmbulanceLo.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(requireContext(), RequestAmbulanceActivity::class.java))
+        })
+    }
+
     private fun handleHospitalTarrifsLo() {
         binding.hospitalTariffsLo.setOnClickListener { view ->
             startActivity(Intent(requireContext(), HospitalTariffsListActivity::class.java))
