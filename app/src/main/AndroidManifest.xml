@@ -16,6 +16,18 @@
             android:exported="false" />
 
         <activity
+            android:name=".activities.MyHealthAdvisorApartmentsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.IBMSingleApartMentHealthAdmisorsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.MyHealthAdvisorsActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.TeamConnectActivity"
             android:exported="false" />
 
