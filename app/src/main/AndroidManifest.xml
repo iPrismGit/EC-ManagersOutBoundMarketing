@@ -13,6 +13,22 @@
         android:theme="@style/Theme.ECMOutBoundMarketing">
 
         <activity
+            android:name=".activities.FeedBackActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.SurgeriesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.SurgeryPackagesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.WhiteBoardFeedBackActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.ReferADiagnosticActivity"
             android:exported="false" />
 

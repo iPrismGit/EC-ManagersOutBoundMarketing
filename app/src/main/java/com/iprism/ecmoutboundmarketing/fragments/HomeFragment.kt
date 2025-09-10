@@ -20,7 +20,9 @@ import com.iprism.ecmoutboundmarketing.activities.ReferADiagnosticActivity
 import com.iprism.ecmoutboundmarketing.activities.RefferAnAdmissionActivity
 import com.iprism.ecmoutboundmarketing.activities.RequestAmbulanceActivity
 import com.iprism.ecmoutboundmarketing.activities.SendInsurencePreAuthActivity
+import com.iprism.ecmoutboundmarketing.activities.SurgeriesActivity
 import com.iprism.ecmoutboundmarketing.activities.TeamConnectActivity
+import com.iprism.ecmoutboundmarketing.activities.WhiteBoardFeedBackActivity
 import com.iprism.ecmoutboundmarketing.databinding.FragmentHomeBinding
 import com.iprism.ecmoutboundmarketing.utils.ToastUtils
 
@@ -52,12 +54,9 @@ class HomeFragment : Fragment() {
 //        handleRewardsLo()
         handleHospitalFecilitiesLo()
         handleHospitalTieupsLo()
-//        handleSurgeriesLo()
-//        handleWhiteBoardLo()
+        handleSurgeriesLo()
+        handleWhiteBoardLo()
         handleHospitalTarrifsLo()
-//        handlePromoCouponsTopLo()
-//        handleRewardsTopLo()
-//        handleOutBounndMTLo()
         handleHospitalUpdatesLo()
         handlePatientTestimonialsLo()
         handleHealthTalks()
@@ -129,18 +128,18 @@ class HomeFragment : Fragment() {
         }
     }
 
-//    private fun handleWhiteBoardLo() {
-//        binding.whiteBoardLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), WhiteBoardFeedBackActivity::class.java))
-//        }
-//    }
-//
-//    private fun handleSurgeriesLo() {
-//        binding.surgicalPackagesLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), SurgeriesActivity::class.java))
-//        }
-//    }
-//
+    private fun handleWhiteBoardLo() {
+        binding.whiteBoardLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), WhiteBoardFeedBackActivity::class.java))
+        }
+    }
+
+    private fun handleSurgeriesLo() {
+        binding.surgicalPackagesLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), SurgeriesActivity::class.java))
+        }
+    }
+
     private fun handleHospitalTieupsLo() {
         binding.hospitalTieupsLo.setOnClickListener { view ->
             startActivity(Intent(requireContext(), HospitalTieupsActivity::class.java))
