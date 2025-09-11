@@ -1174,7 +1174,7 @@
                                 android:layout_marginTop="6dp"
                                 android:fontFamily="@font/lato"
                                 android:gravity="center"
-                                android:text="Patient Testimonials"
+                                android:text="@string/testimonial_videos"
                                 android:textColor="@color/black"
                                 android:textSize="12dp"
                                 android:visibility="visible" />

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.iprism.ecmoutboundmarketing.activities.AddDailyReportActivity
 import com.iprism.ecmoutboundmarketing.activities.AddUsersActivity
+import com.iprism.ecmoutboundmarketing.activities.DigitalBrandingsActivity
 import com.iprism.ecmoutboundmarketing.activities.EventCategoriesActivity
 import com.iprism.ecmoutboundmarketing.activities.HealthMediaActivity
 import com.iprism.ecmoutboundmarketing.activities.HospitalDoctorsActivity
@@ -17,6 +18,7 @@ import com.iprism.ecmoutboundmarketing.activities.HospitalTariffsListActivity
 import com.iprism.ecmoutboundmarketing.activities.HospitalTieupsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyHealthAdvisorsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyLeadsActivity
+import com.iprism.ecmoutboundmarketing.activities.MyTasksActivity
 import com.iprism.ecmoutboundmarketing.activities.PromoCouponsActivity
 import com.iprism.ecmoutboundmarketing.activities.ReferADiagnosticActivity
 import com.iprism.ecmoutboundmarketing.activities.RefferAnAdmissionActivity
@@ -48,7 +50,7 @@ class HomeFragment : Fragment() {
         handleMyLeadsLo()
         handleHospitalDoctorsLo()
         handleHospitalHodsLo()
-//        handleMyTaskLo()
+        handleMyTaskLo()
         handleTeamConnectLo()
         handleMyHealthAdvisorsLo()
         handleEventsLo()
@@ -65,17 +67,30 @@ class HomeFragment : Fragment() {
         handlePatientTestimonialsLo()
         handleHealthTalks()
         handleHealthMedia()
-//        handleDegitalPromos()
+        handleBankEmployeesLo()
+        handleCompanyEmployeesLo()
+        handleDegitalPromos()
         return binding.root
     }
 
+    private fun handleCompanyEmployeesLo() {
+        binding.companyEmployeesLo.setOnClickListener { view ->
+            ToastUtils.showErrorCustomToast(requireContext(), "There are no Screens in Figma!")
+        }
+    }
+
+    private fun handleBankEmployeesLo() {
+        binding.bankEmployeesLo.setOnClickListener { view ->
+            ToastUtils.showErrorCustomToast(requireContext(), "There are no Screens in Figma!")
+        }
+    }
 
 
-//    private fun handleDegitalPromos() {
-//        binding.digitalPromosLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), DigitalBrandingsActivity::class.java))
-//        }
-//    }
+    private fun handleDegitalPromos() {
+        binding.digitalBrandingLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), DigitalBrandingsActivity::class.java))
+        }
+    }
 
     private fun handleHealthMedia() {
         binding.healthMediaLo.setOnClickListener { view ->
@@ -198,11 +213,11 @@ class HomeFragment : Fragment() {
         }
     }
 
-//    private fun handleMyTaskLo() {
-//        binding.taskVsPerformanceLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), MyTasksActivity::class.java))
-//        }
-//    }
+    private fun handleMyTaskLo() {
+        binding.taskVsPerformanceLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), MyTasksActivity::class.java))
+        }
+    }
 
     private fun handleHospitalHodsLo() {
         binding.hospitalHodsLo.setOnClickListener { view ->

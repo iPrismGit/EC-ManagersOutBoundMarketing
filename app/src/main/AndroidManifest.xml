@@ -12,6 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECMOutBoundMarketing">
 
+
+        <activity
+            android:name=".activities.AddDeigitalBrandingActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".activities.DigitalBrandingsActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".activities.ViewAllDigitalBrandingsActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".activities.MyTasksActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".activities.MyTaskProgressActivity"
+            android:exported="false" />
+
         <activity
             android:name=".activities.ToDoListsActivity"
             android:exported="false" />
