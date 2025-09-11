@@ -17,9 +17,11 @@ import com.iprism.ecmoutboundmarketing.activities.HospitalTariffsListActivity
 import com.iprism.ecmoutboundmarketing.activities.HospitalTieupsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyHealthAdvisorsActivity
 import com.iprism.ecmoutboundmarketing.activities.MyLeadsActivity
+import com.iprism.ecmoutboundmarketing.activities.PromoCouponsActivity
 import com.iprism.ecmoutboundmarketing.activities.ReferADiagnosticActivity
 import com.iprism.ecmoutboundmarketing.activities.RefferAnAdmissionActivity
 import com.iprism.ecmoutboundmarketing.activities.RequestAmbulanceActivity
+import com.iprism.ecmoutboundmarketing.activities.RewardsActivity
 import com.iprism.ecmoutboundmarketing.activities.SendInsurencePreAuthActivity
 import com.iprism.ecmoutboundmarketing.activities.SurgeriesActivity
 import com.iprism.ecmoutboundmarketing.activities.TeamConnectActivity
@@ -52,8 +54,8 @@ class HomeFragment : Fragment() {
         handleEventsLo()
         handleAddTodoListLo()
         handleDailyReportsLo()
-//        handlePromoCouponsLo()
-//        handleRewardsLo()
+        handlePromoCouponsLo()
+        handleRewardsLo()
         handleHospitalFecilitiesLo()
         handleHospitalTieupsLo()
         handleSurgeriesLo()
@@ -154,18 +156,18 @@ class HomeFragment : Fragment() {
         }
     }
 
-//    private fun handleRewardsLo() {
-//        binding.rewardsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), RewardsActivity::class.java))
-//        }
-//    }
-//
-//    private fun handlePromoCouponsLo() {
-//        binding.promoCouponsLo.setOnClickListener { view ->
-//            startActivity(Intent(requireContext(), PromoCouponsActivity::class.java))
-//        }
-//    }
-//
+    private fun handleRewardsLo() {
+        binding.rewardsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), RewardsActivity::class.java))
+        }
+    }
+
+    private fun handlePromoCouponsLo() {
+        binding.promoCouponsLo.setOnClickListener { view ->
+            startActivity(Intent(requireContext(), PromoCouponsActivity::class.java))
+        }
+    }
+
     private fun handleDailyReportsLo() {
         binding.dailyReportsLo.setOnClickListener { view ->
             startActivity(Intent(requireContext(), AddDailyReportActivity::class.java))
